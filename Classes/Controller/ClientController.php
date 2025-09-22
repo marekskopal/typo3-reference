@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace MarekSkopal\Reference\Controller;
+namespace MarekSkopal\MsReference\Controller;
 
-use MarekSkopal\Reference\Domain\Repository\ClientRepository;
+use MarekSkopal\MsReference\Domain\Repository\ClientRepository;
 use Psr\Http\Message\ResponseInterface;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 

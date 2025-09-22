@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace MarekSkopal\Reference\Domain\Repository;
+namespace MarekSkopal\MsReference\Domain\Repository;
 
-use MarekSkopal\Reference\Domain\Model\Reference;
+use MarekSkopal\MsReference\Domain\Model\Reference;
 use TYPO3\CMS\Extbase\Persistence\Generic\Query;
 use TYPO3\CMS\Extbase\Persistence\QueryInterface;
 use TYPO3\CMS\Extbase\Persistence\QueryResultInterface;

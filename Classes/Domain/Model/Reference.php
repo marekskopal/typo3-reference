@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MarekSkopal\Reference\Domain\Model;
+namespace MarekSkopal\MsReference\Domain\Model;
 
 use DateTime;
 use Stringable;

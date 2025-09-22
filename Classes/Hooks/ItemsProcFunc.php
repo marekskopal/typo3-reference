@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MarekSkopal\Reference\Hooks;
+namespace MarekSkopal\MsReference\Hooks;
 
 use TYPO3\CMS\Backend\Utility\BackendUtility;
 use TYPO3\CMS\Core\Localization\LanguageService;

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace MarekSkopal\Reference\ViewHelpers;
+namespace MarekSkopal\MsReference\ViewHelpers;
 
-use MarekSkopal\Reference\Domain\Model\Category;
-use MarekSkopal\Reference\Domain\Model\Reference;
+use MarekSkopal\MsReference\Domain\Model\Category;
+use MarekSkopal\MsReference\Domain\Model\Reference;
 use TYPO3Fluid\Fluid\Core\Rendering\RenderingContextInterface;
 use TYPO3Fluid\Fluid\Core\ViewHelper\AbstractConditionViewHelper;
 

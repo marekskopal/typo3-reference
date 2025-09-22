@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace MarekSkopal\Reference\Controller;
+namespace MarekSkopal\MsReference\Controller;
 
 use TYPO3Fluid\Fluid\View\TemplatePaths;
 use TYPO3Fluid\Fluid\View\TemplateView;

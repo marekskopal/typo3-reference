@@ -53,7 +53,7 @@
                         <label>LLL:EXT:ms_reference/Resources/Private/Language/locallang_db.xlf:flexform.template_layout</label>
                         <config>
                             <type>select</type>
-                            <itemsProcFunc>MarekSkopal\Reference\Hooks\ItemsProcFunc->templateLayout</itemsProcFunc>
+                            <itemsProcFunc>MarekSkopal\MsReference\Hooks\ItemsProcFunc->templateLayout</itemsProcFunc>
                             <renderType>selectSingle</renderType>
                             <items>
                                 <numIndex index="0" type="array">
