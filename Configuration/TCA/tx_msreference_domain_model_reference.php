@@ -164,8 +164,8 @@ return [
             'label' => $llPath . ':tx_msreference_domain_model_reference.gps_latitude',
             'config' => [
                 'type' => 'input',
-                'size' => 15,
-                'eval' => 'double11'
+                'size' => 30,
+                'eval' => 'trim,' . Clickstorm\GoMapsExt\Evaluation\Double6Evaluator::class
             ]
         ],
         'gps_longitude' => [
@@ -173,20 +173,20 @@ return [
             'label' => $llPath . ':tx_msreference_domain_model_reference.gps_longitude',
             'config' => [
                 'type' => 'input',
-                'size' => 15,
-                'eval' => 'double11'
+                'size' => 30,
+                'eval' => 'trim,' . Clickstorm\GoMapsExt\Evaluation\Double6Evaluator::class
             ]
         ],
         'map' => [
             'label' => $llPath . ':tx_msreference_domain_model_reference.gps_map',
             'config' => [
-                'type' => 'none',
-                'userFunc' => 'Skopal\\MsReference\\TCA\\Map->render',
+                'type' => 'user',
+                'renderType' => 'GomapsextMapElement',
                 'parameters' => [
-                    'latitude' => 'gps_latitude',
-                    'longitude' => 'gps_longitude'
-                ]
-            ]
+                    'longitude' => 'gps_latitude',
+                    'latitude' => 'gps_longitude',
+                ],
+            ],
         ],
         'perex' => [
             'exclude' => 1,
