@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use MarekSkopal\MsReference\Controller\ClientController;
-use MarekSkopal\MsReference\Controller\ReferenceController;
+use MarekSkopal\Reference\Controller\ClientController;
+use MarekSkopal\Reference\Controller\ReferenceController;
 use TYPO3\CMS\Extbase\Utility\ExtensionUtility;
 
 defined('TYPO3') or die();
