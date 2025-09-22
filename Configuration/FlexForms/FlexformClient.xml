@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+    <sheets>
+        <sDEF>
+            <ROOT>
+                <TCEforms>
+                  <sheetTitle>LLL:EXT:ms_reference/Resources/Private/Language/locallang_db.xlf:flexform.sheet_general</sheetTitle>
+                </TCEforms>
+                <type>array</type>
+                <el>
+                    <settings.listClients>
+                        <label>LLL:EXT:ms_reference/Resources/Private/Language/locallang_db.xlf:flexform.list_clients</label>
+                        <config>
+                            <type>select</type>
+                            <renderType>selectSingleBox</renderType>
+                            <foreign_table>tx_msreference_domain_model_client</foreign_table>
+                            <foreign_table_where> AND tx_msreference_domain_model_client.sys_language_uid IN (-1, 0) ORDER BY tx_msreference_domain_model_client.title ASC</foreign_table_where>
+                            <size>10</size>
+                            <minitems>0</minitems>
+                            <maxitems>20</maxitems>
+                            <wizards>
+                                <suggest>
+                                    <type>suggest</type>
+                                    <maxItemsInResultList>1</maxItemsInResultList>
+                                </suggest>
+                            </wizards>
+                        </config>
+                    </settings.listClients>
+
+                    <settings.showPageUid>
+                        <label>LLL:EXT:ms_reference/Resources/Private/Language/locallang_db.xlf:flexform.show_page_uid</label>
+                        <config>
+                            <type>group</type>
+                            <allowed>pages</allowed>
+                            <relationship>manyToOne</relationship>
+                            <size>1</size>
+                            <maxitems>1</maxitems>
+                            <minitems>0</minitems>
+                            <suggestOptions>
+                                <default>
+                                    <addWhere>AND pages.doktype NOT in (6,199,254)</addWhere>
+                                </default>
+                            </suggestOptions>
+                        </config>
+                    </settings.showPageUid>
+
+                    <settings.templateLayout>
+                        <label>LLL:EXT:ms_reference/Resources/Private/Language/locallang_db.xlf:flexform.template_layout</label>
+                        <config>
+                            <type>select</type>
+                            <itemsProcFunc>MarekSkopal\Reference\Hooks\ItemsProcFunc->templateLayout</itemsProcFunc>
+                            <renderType>selectSingle</renderType>
+                            <items>
+                                <numIndex index="0" type="array">
+                                    <label/>
+                                    <value/>
+                                </numIndex>
+                            </items>
+                        </config>
+                    </settings.templateLayout>
+
+                    <settings.listLimit>
+                        <label>LLL:EXT:ms_reference/Resources/Private/Language/locallang_db.xlf:flexform.list_limit</label>
+                        <config>
+                            <type>number</type>
+                            <format>integer</format>
+                            <nullable>true</nullable>
+                            <default>null</default>
+                        </config>
+                    </settings.listLimit>
+
+                 </el>
+            </ROOT>
+        </sDEF>
+    </sheets>
+</T3DataStructure>

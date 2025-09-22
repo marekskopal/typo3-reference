@@ -1,0 +1,19 @@
+<div class="reference-list-reference grid-item <f:if condition="{reference.gridSize} > 1">grid-item--width{reference.gridSize}</f:if>">
+
+    <f:link.action action="show" arguments="{reference : reference}" > 
+
+        <div class="reference-list-reference-image">
+            <f:if condition="{reference.images}">
+                <f:image image="{reference.images.0}" width="560" height="560" />
+            </f:if>
+        </div>
+
+        <div class="text-container">
+            <div class="text-content">
+                <h2>{reference.title}</h2>
+                <p>See more</p>
+            </div>
+        </div>
+    </f:link.action>
+
+</div>

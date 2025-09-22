@@ -1,0 +1,13 @@
+
+<f:layout name="Default" />
+
+<f:section name="main">
+    <div class="reference-show">
+        <h1>{reference.title}</h1>   
+        <p class="perex">{reference.perex}</p>
+
+        <f:for each="{reference.text}" as="text">
+            <f:format.html>{text.text}</f:format.html>
+        </f:for>
+    </div>
+</f:section>

@@ -1,0 +1,24 @@
+plugin.tx_msreference {
+    view {
+        templateRootPaths {
+            0 = EXT:ms_reference/Resources/Private/Templates/
+            1 = {$plugin.tx_msreference.view.templateRootPath}
+        }
+
+        partialRootPaths {
+            0 = EXT:ms_reference/Resources/Private/Partials/
+            1 = {$plugin.tx_msreference.view.partialRootPath}
+        }
+
+        layoutRootPaths {
+            0 = EXT:ms_reference/Resources/Private/Layouts/
+            1 = {$plugin.tx_msreference.view.layoutRootPath}
+        }
+    }
+    persistence {
+        storagePid = {$plugin.tx_msreference.persistence.storagePid}
+    }
+    features {
+        skipDefaultArguments = 1
+    }
+}

@@ -1,0 +1,21 @@
+<f:layout name="Default" />
+
+<f:section name="main">
+
+    <div class="reference-categories">
+        <f:for each="{categories}" as="category">
+            <f:link.action action="listAjax" additionalParams="{eID:'OdReference'}" additionalAttributes="{data-category:'{category.uid}'}" noCacheHash="true">{category.title}</f:link.action>
+        </f:for>
+    </div>
+
+    <div class="reference-list">
+        <div class="grid-sizer"></div>
+        <div class="gutter-sizer"></div>
+        <f:for each="{references}" as="reference" iteration="referenceIterator">
+            <f:render partial="ListReference" arguments="{reference:reference, referenceIterator:referenceIterator}" />
+        </f:for>
+    </div>
+
+    <f:link.action id="loadAdditionalReferences" class="btn btn-blue col-md-2" action="listAjax" additionalParams="{eID:'OdReference'}" noCacheHash="true">Load <i class="fas fa-chevron-right"></i></f:link.action>
+
+</f:section>

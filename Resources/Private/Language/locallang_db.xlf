@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2014-07-22T08:30:27Z" product-name="ms_reference">
+		<header/>
+		<body>
+			<trans-unit id="tx_msreference_domain_model_reference">
+				<source>Reference</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.subtitle">
+				<source>Subtitle</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.navtitle">
+				<source>Navtitle</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.important">
+				<source>Important reference</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.url">
+				<source>Url</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.category">
+				<source>Category</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.param_values">
+				<source>Parameter values</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.image_main">
+				<source>Main image</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.image_main_back">
+				<source>Main image background</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.images">
+				<source>Images</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.files">
+				<source>Files</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.realization_date">
+				<source>Realization Date</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.gps_latitude">
+				<source>GPS Latitude</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.gps_longitude">
+				<source>GPS Longitude</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.gps_map">
+				<source>Map</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.gps_map_hint">
+				<source>Move the marker to update the GPS coordinates above</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.gps_map_search">
+				<source>Search</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.text">
+				<source>Text</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.meta_keywords">
+				<source>Meta keywords</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.meta_description">
+				<source>Meta description</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.current_project">
+				<source>Current project</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.clients">
+				<source>Clients</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.similar_references">
+				<source>Similar references</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.tab_params">
+				<source>Parameters</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.tab_media">
+				<source>Media</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.tab_texts">
+				<source>Texts</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.tab_relations">
+				<source>Relations</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.tab_seo">
+				<source>Seo</source>
+			</trans-unit>
+
+			<trans-unit id="tx_msreference_domain_model_category">
+				<source>Category</source>
+			</trans-unit>
+            <trans-unit id="tx_msreference_domain_model_category.parent">
+				<source>Parent category</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_category.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_category.subtitle">
+				<source>Subtitle</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_category.navtitle">
+				<source>Navtitle</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_category.class">
+				<source>Class</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_category.perex">
+				<source>Perex</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_category.text">
+				<source>Text</source>
+			</trans-unit>
+
+			<trans-unit id="tx_msreference_domain_model_text">
+				<source>Text</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_text.type">
+				<source>Type</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_text.text">
+				<source>Text</source>
+			</trans-unit>
+
+			<trans-unit id="tx_msreference_domain_model_param">
+				<source>Parameter</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_param.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_param.class">
+				<source>Class</source>
+			</trans-unit>
+
+			<trans-unit id="tx_msreference_domain_model_paramvalue">
+				<source>Parameter value</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_paramvalue.param">
+				<source>Parameter</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_paramvalue.param_value">
+				<source>Value</source>
+			</trans-unit>
+
+			<trans-unit id="tx_msreference_domain_model_client">
+				<source>Client</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.class">
+				<source>Class</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.perex">
+				<source>Perex</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.text">
+				<source>Text</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.link_external">
+				<source>External link</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.images">
+				<source>Images</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.references">
+				<source>References</source>
+			</trans-unit>
+
+			<trans-unit id="flexform.sheet_general">
+				<source>General</source>
+			</trans-unit>
+			<trans-unit id="flexform.list_categories">
+				<source>Categories</source>
+			</trans-unit>
+			<trans-unit id="flexform.list_group_by_categories">
+				<source>List group by categories</source>
+			</trans-unit>
+			<trans-unit id="flexform.gMaps">
+				<source>Google maps</source>
+			</trans-unit>
+			<trans-unit id="flexform.show_page_uid">
+				<source>Show page id</source>
+			</trans-unit>
+			<trans-unit id="flexform.template_layout">
+				<source>Template layout</source>
+			</trans-unit>
+			<trans-unit id="flexform.list_sort_field">
+				<source>Sort by</source>
+			</trans-unit>
+			<trans-unit id="flexform.list_sort_dir">
+				<source>Sort direction</source>
+			</trans-unit>
+			<trans-unit id="flexform.list_sort_important">
+				<source>Prepend important references</source>
+			</trans-unit>
+			<trans-unit id="flexform.list_limit">
+				<source>Limit</source>
+			</trans-unit>
+			<trans-unit id="flexform.list_reference">
+				<source>Show only selected reference</source>
+			</trans-unit>
+			<trans-unit id="flexform.list_clients">
+				<source>Show only selected clients</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

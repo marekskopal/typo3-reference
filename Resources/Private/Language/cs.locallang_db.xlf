@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en"  target-language="cs" datatype="plaintext" original="messages" date="2014-07-22T08:30:27Z" product-name="ms_reference">
+		<header/>
+		<body>
+			<trans-unit id="tx_msreference_domain_model_reference">
+				<source>Reference</source>
+				<target>Reference</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.title">
+				<source>Title</source>
+				<target>Název</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.subtitle">
+				<source>Subtitle</source>
+				<target>Podnázev</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.navtitle">
+				<source>Navtitle</source>
+				<target>Název navigace</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.important">
+				<source>Important reference</source>
+				<target>Důležitá reference</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.url">
+				<source>Url</source>
+				<target>Url</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.category">
+				<source>Category</source>
+				<target>Kategorie</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.param_values">
+				<source>Parameter values</source>
+				<target>Hodnoty parametrů</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.image_main">
+				<source>Main image</source>
+				<target>Hlavní obrázek</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.image_main_back">
+				<source>Main image background</source>
+				<target>Hlavní obrázek pozadí</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.image_main_position">
+				<source>Text position on main image</source>
+				<target>Umístění textu na hlavním obrázku</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.image_main_detail">
+				<source>Main image for detail</source>
+				<target>Hlavní obrázek na detail</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.image_main_detail_back">
+				<source>Main image background for detail</source>
+				<target>Hlavní obrázek pozadí na detail</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.image_main_detail_position">
+				<source>Text position on main image for detail</source>
+				<target>Umístění textu na hlavním obrázku na detail</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.images">
+				<source>Images</source>
+				<target>Obrázky</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.files">
+				<source>Files</source>
+				<target>Soubory</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.realization_date">
+				<source>Realization Date</source>
+				<target>Datum realizace</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.gps_latitude">
+				<source>GPS Latitude</source>
+				<target>GPS zem. šířka</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.gps_longitude">
+				<source>GPS Longitude</source>
+				<target>GPS zem. délka</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.gps_map">
+				<source>Map</source>
+				<target>Mapa</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.gps_map_hint">
+				<source>Move the marker to update the GPS coordinates above</source>
+				<target>Změňte polohu markeru k obnovení GPS koordinátů výše</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.gps_map_search">
+				<source>Search</source>
+				<target>Hledat</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.perex">
+				<source>Perex</source>
+				<target>Perex</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.text">
+				<source>Text</source>
+				<target>Text</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.meta_keywords">
+				<source>Meta keywords</source>
+				<target>Meta keywords</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.meta_description">
+				<source>Meta description</source>
+				<target>Meta description</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.current_project">
+				<source>Current project</source>
+				<target>Současný projekt</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.clients">
+				<source>Clients</source>
+				<target>Klienti</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.similar_references">
+				<source>Similar references</source>
+				<target>Podobné reference</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.tab_params">
+				<source>Parameters</source>
+				<target>Parametry</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.tab_media">
+				<source>Media</source>
+				<target>Media</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.tab_texts">
+				<source>Texts</source>
+				<target>Texty</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.tab_relations">
+				<source>Relations</source>
+				<target>Relace</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.tab_seo">
+				<source>Seo</source>
+				<target>Seo</target>
+			</trans-unit>
+
+			<trans-unit id="tx_msreference_domain_model_category">
+				<source>Category</source>
+				<target>Kategorie</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_category.parent">
+				<source>Parent category</source>
+				<target>Rodičovská kategorie</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_category.title">
+				<source>Title</source>
+				<target>Název</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_category.subtitle">
+				<source>Subtitle</source>
+				<target>Podnázev</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_category.navtitle">
+				<source>Navtitle</source>
+				<target>Název navigace</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_category.class">
+				<source>Class</source>
+				<target>Třída</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_category.perex">
+				<source>Perex</source>
+				<target>Perex</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_category.text">
+				<source>Text</source>
+				<target>Text</target>
+			</trans-unit>
+
+			<trans-unit id="tx_msreference_domain_model_text">
+				<source>Text</source>
+				<target>Text</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_text.type">
+				<source>Type</source>
+				<target>Typ</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_text.text">
+				<source>Text</source>
+				<target>Text</target>
+			</trans-unit>
+
+			<trans-unit id="tx_msreference_domain_model_param">
+				<source>Parameter</source>
+				<target>Parametr</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_param.title">
+				<source>Title</source>
+				<target>Název</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_param.class">
+				<source>Class</source>
+				<target>Třída</target>
+			</trans-unit>
+
+			<trans-unit id="tx_msreference_domain_model_paramvalue">
+				<source>Parameter value</source>
+				<target>Hodnota parametru</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_paramvalue.param">
+				<source>Parameter</source>
+				<target>Parametr</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_paramvalue.param_value">
+				<source>Value</source>
+				<target>Hodnota</target>
+			</trans-unit>
+
+			<trans-unit id="tx_msreference_domain_model_client">
+				<source>Client</source>
+				<target>Klient</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.title">
+				<source>Title</source>
+				<target>Název</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.class">
+				<source>Class</source>
+				<target>Třída</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.perex">
+				<source>Perex</source>
+				<target>Perex</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.text">
+				<source>Text</source>
+				<target>Text</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.link_external">
+				<source>External link</source>
+				<target>Externí odkaz</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.images">
+				<source>Images</source>
+				<target>Obrázky</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.references">
+				<source>References</source>
+				<target>Reference</target>
+			</trans-unit>
+
+			<trans-unit id="flexform.sheet_general">
+				<source>General</source>
+                <target>Hlavní</target>
+			</trans-unit>
+			<trans-unit id="flexform.list_categories">
+				<source>Categories</source>
+				<target>Kategorie</target>
+			</trans-unit>
+			<trans-unit id="flexform.list_group_by_categories">
+				<source>List group by categories</source>
+				<target>Seřadit podle kategorií</target>
+			</trans-unit>
+			<trans-unit id="flexform.gMaps">
+				<source>Google maps</source>
+				<target>Google maps</target>
+			</trans-unit>
+			<trans-unit id="flexform.show_page_uid">
+				<source>Show page id</source>
+				<target>Id stránky detailu</target>
+			</trans-unit>
+			<trans-unit id="flexform.template_layout">
+				<source>Template layout</source>
+				<target>Rozložení šablon</target>
+			</trans-unit>
+			<trans-unit id="flexform.list_sort_field">
+				<source>Sort by</source>
+				<target>Řadit dle</target>
+			</trans-unit>
+			<trans-unit id="flexform.list_sort_dir">
+				<source>Sort direction</source>
+				<target>Směr řazení</target>
+			</trans-unit>
+			<trans-unit id="flexform.list_sort_important">
+				<source>Prepend important references</source>
+				<target>Předřadit důležité reference</target>
+			</trans-unit>
+			<trans-unit id="flexform.list_limit">
+				<source>Limit</source>
+				<target>Limit</target>
+			</trans-unit>
+			<trans-unit id="flexform.list_reference">
+				<source>Show only selected reference</source>
+				<target>Zobrazit pouze vybrané reference</target>
+			</trans-unit>
+			<trans-unit id="flexform.list_clients">
+				<source>Show only selected clients</source>
+				<target>Zobrazit pouze vybrané klienty</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
