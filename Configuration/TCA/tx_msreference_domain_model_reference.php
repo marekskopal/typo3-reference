@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
-defined('TYPO3') or die();
+use Clickstorm\GoMapsExt\Evaluation\Double6Evaluator;
+
+defined('TYPO3') or die;
 
 $llPath = 'LLL:EXT:ms_reference/Resources/Private/Language/locallang_db.xlf';
 $table = 'tx_msreference_domain_model_reference';
@@ -20,10 +22,10 @@ return [
         'transOrigDiffSourceField' => 'l10n_diffsource',
         'delete' => 'deleted',
         'enablecolumns' => [
-            'disabled' => 'hidden'
+            'disabled' => 'hidden',
         ],
         'searchFields' => 'title,subtitle,navtitle,url,images,files,realization_date,gps_latitude,gps_longitude,text',
-        'iconfile' => 'EXT:ms_reference/Resources/Public/Icons/' . $table . '.png'
+        'iconfile' => 'EXT:ms_reference/Resources/Public/Icons/' . $table . '.png',
     ],
     'types' => [
         '1' => [
@@ -33,22 +35,22 @@ return [
             --div--;' . $llPath . ':' . $table . '.tab_media, images, files,
             --div--;' . $llPath . ':' . $table . '.tab_contact, street, city, zip, --palette--;GPS;gps;2,,
             --div--;' . $llPath . ':' . $table . '.tab_relations, clients,similar_references,
-            --div--;' . $llPath . ':' . $table . '.tab_seo, meta_keywords, meta_description'
-        ]
+            --div--;' . $llPath . ':' . $table . '.tab_seo, meta_keywords, meta_description',
+        ],
     ],
     'palettes' => [
         'gps' => [
             'canNotCollapse' => true,
-            'showitem' => 'gps_latitude, gps_longitude, address, --linebreak--, map'
-        ]
+            'showitem' => 'gps_latitude, gps_longitude, address, --linebreak--, map',
+        ],
     ],
     'columns' => [
         'hidden' => [
             'exclude' => 1,
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.hidden',
             'config' => [
-                'type' => 'check'
-            ]
+                'type' => 'check',
+            ],
         ],
         'title' => [
             'exclude' => 1,
@@ -57,8 +59,8 @@ return [
                 'type' => 'input',
                 'size' => 30,
                 'eval' => 'trim',
-                'required' => true
-            ]
+                'required' => true,
+            ],
         ],
         'subtitle' => [
             'exclude' => 1,
@@ -66,8 +68,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim'
-            ]
+                'eval' => 'trim',
+            ],
         ],
         'navtitle' => [
             'exclude' => 1,
@@ -75,15 +77,15 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim'
-            ]
+                'eval' => 'trim',
+            ],
         ],
         'important' => [
             'exclude' => 1,
             'label' => $llPath . ':' . $table . '.important',
             'config' => [
-                'type' => 'check'
-            ]
+                'type' => 'check',
+            ],
         ],
         'url' => [
             'exclude' => 1,
@@ -91,8 +93,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim'
-            ]
+                'eval' => 'trim',
+            ],
         ],
         'images' => [
             'exclude' => 1,
@@ -122,7 +124,7 @@ return [
                 'format' => 'date',
                 'default' => null,
                 'nullable' => true,
-            ]
+            ],
         ],
         'category' => [
             'exclude' => 0,
@@ -132,7 +134,7 @@ return [
                 'renderType' => 'selectTree',
                 'foreign_table' => 'tx_msreference_domain_model_category',
                 'foreign_table_where' => ' AND tx_msreference_domain_model_category.sys_language_uid IN (-1, 0) ORDER BY tx_msreference_domain_model_category.uid',
-                "MM" => "tx_msreference_reference_category_mm",
+                'MM' => 'tx_msreference_reference_category_mm',
                 'minitems' => 0,
                 'maxitems' => 30,
                 'renderMode' => 'tree',
@@ -142,10 +144,10 @@ return [
                         'expandAll' => true,
                         'showHeader' => true,
                         'maxLevels' => 2,
-                        'nonSelectableLevels' => '0,1'
-                    ]
-                ]
-            ]
+                        'nonSelectableLevels' => '0,1',
+                    ],
+                ],
+            ],
         ],
         'param_values' => [
             'exclude' => 1,
@@ -163,8 +165,8 @@ return [
                     'showSynchronizationLink' => 1,
                     'showAllLocalizationLink' => 1,
                     'showPossibleLocalizationRecords' => 1,
-                ]
-            ]
+                ],
+            ],
         ],
         'gps_latitude' => [
             'exclude' => 1,
@@ -172,8 +174,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim,' . Clickstorm\GoMapsExt\Evaluation\Double6Evaluator::class
-            ]
+                'eval' => 'trim,' . Double6Evaluator::class,
+            ],
         ],
         'gps_longitude' => [
             'exclude' => 1,
@@ -181,8 +183,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim,' . Clickstorm\GoMapsExt\Evaluation\Double6Evaluator::class
-            ]
+                'eval' => 'trim,' . Clickstorm\GoMapsExt\Evaluation\Double6Evaluator::class,
+            ],
         ],
         'address' => [
             'exclude' => 1,
@@ -190,8 +192,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim'
-            ]
+                'eval' => 'trim',
+            ],
         ],
         'map' => [
             'label' => $llPath . ':' . $table . '.gps_map',
@@ -215,8 +217,8 @@ return [
                 'type' => 'text',
                 'cols' => 40,
                 'rows' => 15,
-                'eval' => 'trim'
-            ]
+                'eval' => 'trim',
+            ],
         ],
         'text' => [
             'exclude' => 1,
@@ -232,14 +234,14 @@ return [
                         'notNewRecords' => 1,
                         'RTEonly' => 1,
                         'module' => [
-                            'rte'
+                            'rte',
                         ],
                         'title' => 'LLL:EXT:cms/locallang_ttc.xlf:bodytext.W.RTE',
-                        'type' => 'script'
-                    ]
-                ]
+                        'type' => 'script',
+                    ],
+                ],
             ],
-            'defaultExtras' => 'richtext:rte_transform[flag=rte_enabled|mode=ts]'
+            'defaultExtras' => 'richtext:rte_transform[flag=rte_enabled|mode=ts]',
         ],
         'meta_keywords' => [
             'exclude' => 1,
@@ -247,8 +249,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim'
-            ]
+                'eval' => 'trim',
+            ],
         ],
         'meta_description' => [
             'exclude' => 1,
@@ -256,15 +258,15 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim'
-            ]
+                'eval' => 'trim',
+            ],
         ],
         'current_project' => [
             'exclude' => 1,
             'label' => $llPath . ':' . $table . '.current_project',
             'config' => [
-                'type' => 'check'
-            ]
+                'type' => 'check',
+            ],
         ],
         'similar_references' => [
             'exclude' => 1,
@@ -278,8 +280,8 @@ return [
                 'size' => 10,
                 'autoSizeMax' => 30,
                 'maxitems' => 99,
-                'multiple' => 0
-            ]
+                'multiple' => 0,
+            ],
         ],
         'clients' => [
             'exclude' => 1,
@@ -293,8 +295,8 @@ return [
                 'size' => 10,
                 'autoSizeMax' => 30,
                 'maxitems' => 99,
-                'multiple' => 0
-            ]
+                'multiple' => 0,
+            ],
         ],
         'city' => [
             'exclude' => 1,
@@ -302,8 +304,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim'
-            ]
+                'eval' => 'trim',
+            ],
         ],
         'street' => [
             'exclude' => 1,
@@ -311,8 +313,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim'
-            ]
+                'eval' => 'trim',
+            ],
         ],
         'zip' => [
             'exclude' => 1,
@@ -320,13 +322,13 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 5,
-                'eval' => 'trim'
-            ]
+                'eval' => 'trim',
+            ],
         ],
         'sorting' => [
             'config' => [
-                'type' => 'passthrough'
-            ]
-        ]
-    ]
+                'type' => 'passthrough',
+            ],
+        ],
+    ],
 ];

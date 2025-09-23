@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-defined('TYPO3') or die();
+defined('TYPO3') or die;
 
 $llPath = 'LLL:EXT:ms_reference/Resources/Private/Language/locallang_db.xlf';
 $table = 'tx_msreference_domain_model_category';
@@ -20,28 +20,28 @@ return [
         'transOrigDiffSourceField' => 'l10n_diffsource',
         'delete' => 'deleted',
         'enablecolumns' => [
-            'disabled' => 'hidden'
+            'disabled' => 'hidden',
         ],
         'searchFields' => 'title,subtitle,navtitle,perex,text',
-        'iconfile' => 'EXT:ms_reference/Resources/Public/Icons/' . $table . '.png'
+        'iconfile' => 'EXT:ms_reference/Resources/Public/Icons/' . $table . '.png',
     ],
     'types' => [
         '1' => [
-            'showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, parent, title, subtitle, class, perex, text;;;richtext:rte_transform[mode=ts_links], images'
-        ]
+            'showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, parent, title, subtitle, class, perex, text;;;richtext:rte_transform[mode=ts_links], images',
+        ],
     ],
     'palettes' => [
         '1' => [
-            'showitem' => ''
-        ]
+            'showitem' => '',
+        ],
     ],
     'columns' => [
         'hidden' => [
             'exclude' => 1,
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.hidden',
             'config' => [
-                'type' => 'check'
-            ]
+                'type' => 'check',
+            ],
         ],
         'parent' => [
             'exclude' => 1,
@@ -56,10 +56,10 @@ return [
                 'items' => [
                     [
                         'label' => '',
-                        'value' => 0
-                    ]
-                ]
-            ]
+                        'value' => 0,
+                    ],
+                ],
+            ],
         ],
         'title' => [
             'exclude' => 1,
@@ -68,8 +68,8 @@ return [
                 'type' => 'input',
                 'size' => 30,
                 'eval' => 'trim',
-                'required' => true
-            ]
+                'required' => true,
+            ],
         ],
         'subtitle' => [
             'exclude' => 1,
@@ -77,8 +77,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim'
-            ]
+                'eval' => 'trim',
+            ],
         ],
         'navtitle' => [
             'exclude' => 1,
@@ -86,8 +86,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim'
-            ]
+                'eval' => 'trim',
+            ],
         ],
         'class' => [
             'exclude' => 1,
@@ -95,8 +95,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim'
-            ]
+                'eval' => 'trim',
+            ],
         ],
         'perex' => [
             'exclude' => 1,
@@ -105,8 +105,8 @@ return [
                 'type' => 'text',
                 'cols' => 40,
                 'rows' => 15,
-                'eval' => 'trim'
-            ]
+                'eval' => 'trim',
+            ],
         ],
         'text' => [
             'exclude' => 1,
@@ -124,11 +124,11 @@ return [
                         'title' => 'LLL:EXT:cms/locallang_ttc.xlf:bodytext.W.RTE',
                         'type' => 'script',
                         'module' => [
-                            'name' => 'wizard_rte'
-                        ]
-                    ]
-                ]
-            ]
+                            'name' => 'wizard_rte',
+                        ],
+                    ],
+                ],
+            ],
         ],
         'images' => [
             'exclude' => 1,
@@ -140,5 +140,5 @@ return [
                 'allowed' => 'common-image-types',
             ],
         ],
-    ]
+    ],
 ];

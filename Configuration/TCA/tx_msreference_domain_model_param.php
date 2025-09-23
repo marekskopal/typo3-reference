@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-defined('TYPO3') or die();
+defined('TYPO3') or die;
 
 $llPath = 'LLL:EXT:ms_reference/Resources/Private/Language/locallang_db.xlf';
 $table = 'tx_msreference_domain_model_param';
@@ -20,28 +20,28 @@ return [
         'transOrigDiffSourceField' => 'l10n_diffsource',
         'delete' => 'deleted',
         'enablecolumns' => [
-            'disabled' => 'hidden'
+            'disabled' => 'hidden',
         ],
         'searchFields' => 'title',
-        'iconfile' => 'EXT:ms_reference/Resources/Public/Icons/' . $table . '.png'
+        'iconfile' => 'EXT:ms_reference/Resources/Public/Icons/' . $table . '.png',
     ],
     'types' => [
         '1' => [
-            'showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, title, class'
-        ]
+            'showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, title, class',
+        ],
     ],
     'palettes' => [
         '1' => [
-            'showitem' => ''
-        ]
+            'showitem' => '',
+        ],
     ],
     'columns' => [
         'hidden' => [
             'exclude' => 1,
             'label' => 'LLL:EXT:core/Resources/Private/Language/locallang_general.xlf:LGL.hidden',
             'config' => [
-                'type' => 'check'
-            ]
+                'type' => 'check',
+            ],
         ],
         'title' => [
             'exclude' => 1,
@@ -50,8 +50,8 @@ return [
                 'type' => 'input',
                 'size' => 30,
                 'eval' => 'trim',
-                'required' => true
-            ]
+                'required' => true,
+            ],
         ],
         'class' => [
             'exclude' => 1,
@@ -59,8 +59,8 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim'
-            ]
-        ]
-    ]
+                'eval' => 'trim',
+            ],
+        ],
+    ],
 ];
