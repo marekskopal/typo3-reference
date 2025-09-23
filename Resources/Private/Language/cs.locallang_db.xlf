@@ -119,6 +119,22 @@
 				<source>Similar references</source>
 				<target>Podobné reference</target>
 			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.address">
+				<source>Address</source>
+				<target>Adresa</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.street">
+				<source>Street</source>
+				<target>Ulice</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.city">
+				<source>City</source>
+				<target>Město</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.zip">
+				<source>ZIP</source>
+				<target>PSČ</target>
+			</trans-unit>
 			<trans-unit id="tx_msreference_domain_model_reference.tab_params">
 				<source>Parameters</source>
 				<target>Parametry</target>
@@ -130,6 +146,10 @@
 			<trans-unit id="tx_msreference_domain_model_reference.tab_texts">
 				<source>Texts</source>
 				<target>Texty</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.tab_contact">
+				<source>Contact</source>
+				<target>Kontakt</target>
 			</trans-unit>
 			<trans-unit id="tx_msreference_domain_model_reference.tab_relations">
 				<source>Relations</source>
@@ -243,6 +263,46 @@
 			<trans-unit id="tx_msreference_domain_model_client.references">
 				<source>References</source>
 				<target>Reference</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.gps_latitude">
+				<source>GPS Latitude</source>
+				<target>GPS zem. šířka</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.gps_longitude">
+				<source>GPS Longitude</source>
+				<target>GPS zem. délka</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.gps_map">
+				<source>Map</source>
+				<target>Mapa</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.address">
+				<source>Address</source>
+				<target>Adresa</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.street">
+				<source>Street</source>
+				<target>Ulice</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.city">
+				<source>City</source>
+				<target>Město</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.zip">
+				<source>ZIP</source>
+				<target>PSČ</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.tab_media">
+				<source>Media</source>
+				<target>Media</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.tab_contact">
+				<source>Contact</source>
+				<target>Kontakt</target>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.tab_relations">
+				<source>Relations</source>
+				<target>Relace</target>
 			</trans-unit>
 
 			<trans-unit id="flexform.sheet_general">

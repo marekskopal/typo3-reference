@@ -5,10 +5,11 @@ declare(strict_types=1);
 defined('TYPO3') or die();
 
 $llPath = 'LLL:EXT:ms_reference/Resources/Private/Language/locallang_db.xlf';
+$table = 'tx_msreference_domain_model_paramvalue';
 
 return [
     'ctrl' => [
-        'title' => $llPath . ':tx_msreference_domain_model_paramvalue',
+        'title' => $llPath . ':' . $table,
         'label' => 'param_value',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -23,7 +24,7 @@ return [
         ],
         'searchFields' => 'param_value',
         'hideTable' => true,
-        'iconfile' => 'EXT:ms_reference/Resources/Public/Icons/tx_msreference_domain_model_paramvalue.png'
+        'iconfile' => 'EXT:ms_reference/Resources/Public/Icons/' . $table . '.png'
     ],
     'types' => [
         '1' => [
@@ -50,7 +51,7 @@ return [
         ],
         'param' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_paramvalue.param',
+            'label' => $llPath . ':' . $table . '.param',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -62,7 +63,7 @@ return [
         ],
         'param_value' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_paramvalue.param_value',
+            'label' => $llPath . ':' . $table . '.param_value',
             'config' => [
                 'type' => 'input',
                 'size' => 30,

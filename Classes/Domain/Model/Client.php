@@ -26,6 +26,16 @@ class Client extends AbstractEntity implements Stringable
 
     protected string $class = '';
 
+    protected float $gpsLatitude = 0.0;
+
+    protected float $gpsLongitude = 0.0;
+
+    protected string $street = '';
+
+    protected string $city = '';
+
+    protected string $zip = '';
+
     /** @var ObjectStorage<Reference> */
     #[Lazy()]
     protected ObjectStorage $references;
@@ -107,6 +117,56 @@ class Client extends AbstractEntity implements Stringable
     public function setClass(string $class): void
     {
         $this->class = $class;
+    }
+
+    public function getGpsLatitude(): float
+    {
+        return $this->gpsLatitude;
+    }
+
+    public function setGpsLatitude(float $gpsLatitude): void
+    {
+        $this->gpsLatitude = $gpsLatitude;
+    }
+
+    public function getGpsLongitude(): float
+    {
+        return $this->gpsLongitude;
+    }
+
+    public function setGpsLongitude(float $gpsLongitude): void
+    {
+        $this->gpsLongitude = $gpsLongitude;
+    }
+
+    public function getStreet(): string
+    {
+        return $this->street;
+    }
+
+    public function setStreet(string $street): void
+    {
+        $this->street = $street;
+    }
+
+    public function getCity(): string
+    {
+        return $this->city;
+    }
+
+    public function setCity(string $city): void
+    {
+        $this->city = $city;
+    }
+
+    public function getZip(): string
+    {
+        return $this->zip;
+    }
+
+    public function setZip(string $zip): void
+    {
+        $this->zip = $zip;
     }
 
     /** @return ObjectStorage<Reference> $reference */

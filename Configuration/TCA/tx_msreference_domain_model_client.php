@@ -5,10 +5,11 @@ declare(strict_types=1);
 defined('TYPO3') or die();
 
 $llPath = 'LLL:EXT:ms_reference/Resources/Private/Language/locallang_db.xlf';
+$table = 'tx_msreference_domain_model_client';
 
 return [
     'ctrl' => [
-        'title' => $llPath . ':tx_msreference_domain_model_client',
+        'title' => $llPath . ':' . $table,
         'label' => 'title',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -22,16 +23,20 @@ return [
             'disabled' => 'hidden'
         ],
         'searchFields' => 'title,class,perex,text',
-        'iconfile' => 'EXT:ms_reference/Resources/Public/Icons/tx_msreference_domain_model_client.png'
+        'iconfile' => 'EXT:ms_reference/Resources/Public/Icons/' . $table . '.png'
     ],
     'types' => [
         '1' => [
-            'showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, title, class, perex, text;;;richtext:rte_transform[mode=ts_links], link_external, images, reference'
+            'showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, title, class, perex, text;;;richtext:rte_transform[mode=ts_links], link_external,
+             --div--;' . $llPath . ':' . $table . '.tab_media, images,
+             --div--;' . $llPath . ':' . $table . '.tab_contact, street, city, zip, --palette--;GPS;gps;2,,
+             --div--;' . $llPath . ':' . $table . '.tab_relations, reference'
         ]
     ],
     'palettes' => [
-        '1' => [
-            'showitem' => ''
+        'gps' => [
+            'canNotCollapse' => true,
+            'showitem' => 'gps_latitude, gps_longitude, address, --linebreak--, map'
         ]
     ],
     'columns' => [
@@ -44,7 +49,7 @@ return [
         ],
         'title' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_client.title',
+            'label' => $llPath . ':' . $table . '.title',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -54,7 +59,7 @@ return [
         ],
         'class' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_client.class',
+            'label' => $llPath . ':' . $table . '.class',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -63,7 +68,7 @@ return [
         ],
         'perex' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_client.perex',
+            'label' => $llPath . ':' . $table . '.perex',
             'config' => [
                 'type' => 'text',
                 'cols' => 40,
@@ -73,7 +78,7 @@ return [
         ],
         'text' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_client.text',
+            'label' => $llPath . ':' . $table . '.text',
             'config' => [
                 'type' => 'text',
                 'cols' => 40,
@@ -95,7 +100,7 @@ return [
         ],
         'link_external' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_client.link_external',
+            'label' => $llPath . ':' . $table . '.link_external',
             'config' => [
                 'type' => 'text',
                 'cols' => 40,
@@ -105,7 +110,7 @@ return [
         ],
         'images' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_client.images',
+            'label' => $llPath . ':' . $table . '.images',
             'config' => [
                 'type' => 'file',
                 'maxitems' => 99,
@@ -115,7 +120,7 @@ return [
         ],
         'reference' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_client.references',
+            'label' => $llPath . ':' . $table . '.references',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectMultipleSideBySide',
@@ -128,6 +133,75 @@ return [
                 'maxitems' => 99,
                 'multiple' => 0
 			]
-		]
+		],
+        'city' => [
+            'exclude' => 1,
+            'label' => $llPath . ':' . $table . '.city',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'trim'
+            ]
+        ],
+        'street' => [
+            'exclude' => 1,
+            'label' => $llPath . ':' . $table . '.street',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'trim'
+            ]
+        ],
+        'zip' => [
+            'exclude' => 1,
+            'label' => $llPath . ':' . $table . '.zip',
+            'config' => [
+                'type' => 'input',
+                'size' => 5,
+                'eval' => 'trim'
+            ]
+        ],
+        'gps_latitude' => [
+            'exclude' => 1,
+            'label' => $llPath . ':' . $table . '.gps_latitude',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'trim,' . Clickstorm\GoMapsExt\Evaluation\Double6Evaluator::class
+            ]
+        ],
+        'gps_longitude' => [
+            'exclude' => 1,
+            'label' => $llPath . ':' . $table . '.gps_longitude',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'trim,' . Clickstorm\GoMapsExt\Evaluation\Double6Evaluator::class
+            ]
+        ],
+        'address' => [
+            'exclude' => 1,
+            'label' => $llPath . ':' . $table . '.address',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'trim'
+            ]
+        ],
+        'map' => [
+            'label' => $llPath . ':' . $table . '.gps_map',
+            'config' => [
+                'type' => 'user',
+                'renderType' => 'GomapsextMapElement',
+                'parameters' => [
+                    'longitude' => 'gps_latitude',
+                    'latitude' => 'gps_longitude',
+                    'address' => 'address',
+                    'street' => 'street',
+                    'zip' => 'zip',
+                    'city' => 'city',
+                ],
+            ],
+        ],
 	]
 ];

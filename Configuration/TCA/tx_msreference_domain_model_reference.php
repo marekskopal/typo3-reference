@@ -5,10 +5,11 @@ declare(strict_types=1);
 defined('TYPO3') or die();
 
 $llPath = 'LLL:EXT:ms_reference/Resources/Private/Language/locallang_db.xlf';
+$table = 'tx_msreference_domain_model_reference';
 
 return [
     'ctrl' => [
-        'title' => $llPath . ':tx_msreference_domain_model_reference',
+        'title' => $llPath . ':' . $table,
         'label' => 'title',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -22,17 +23,23 @@ return [
             'disabled' => 'hidden'
         ],
         'searchFields' => 'title,subtitle,navtitle,url,images,files,realization_date,gps_latitude,gps_longitude,text',
-        'iconfile' => 'EXT:ms_reference/Resources/Public/Icons/tx_msreference_domain_model_reference.png'
+        'iconfile' => 'EXT:ms_reference/Resources/Public/Icons/' . $table . '.png'
     ],
     'types' => [
         '1' => [
-            'showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, title, subtitle, navtitle, important, url,realization_date, category, --palette--;GPS;gps;2,--div--;LLL:EXT:ms_reference/Resources/Private/Language/locallang_db.xlf:tx_msreference_domain_model_reference.tab_params, param_values,--div--;LLL:EXT:ms_reference/Resources/Private/Language/locallang_db.xlf:tx_msreference_domain_model_reference.tab_media, images, files, --div--;LLL:EXT:ms_reference/Resources/Private/Language/locallang_db.xlf:tx_msreference_domain_model_reference.tab_texts, perex, text,--div--;LLL:EXT:ms_reference/Resources/Private/Language/locallang_db.xlf:tx_msreference_domain_model_reference.tab_relations,clients,similar_references,--div--;LLL:EXT:ms_reference/Resources/Private/Language/locallang_db.xlf:tx_msreference_domain_model_reference.tab_seo,meta_keywords, meta_description'
+            'showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, title, subtitle, navtitle, important, url,realization_date, category,
+            --div--;' . $llPath . ':' . $table . '.tab_params, param_values,
+            --div--;' . $llPath . ':' . $table . '.tab_texts, perex, text,
+            --div--;' . $llPath . ':' . $table . '.tab_media, images, files,
+            --div--;' . $llPath . ':' . $table . '.tab_contact, street, city, zip, --palette--;GPS;gps;2,,
+            --div--;' . $llPath . ':' . $table . '.tab_relations, clients,similar_references,
+            --div--;' . $llPath . ':' . $table . '.tab_seo, meta_keywords, meta_description'
         ]
     ],
     'palettes' => [
         'gps' => [
             'canNotCollapse' => true,
-            'showitem' => 'gps_latitude, gps_longitude, --linebreak--, map'
+            'showitem' => 'gps_latitude, gps_longitude, address, --linebreak--, map'
         ]
     ],
     'columns' => [
@@ -45,7 +52,7 @@ return [
         ],
         'title' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_reference.title',
+            'label' => $llPath . ':' . $table . '.title',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -55,7 +62,7 @@ return [
         ],
         'subtitle' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_reference.subtitle',
+            'label' => $llPath . ':' . $table . '.subtitle',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -64,7 +71,7 @@ return [
         ],
         'navtitle' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_reference.navtitle',
+            'label' => $llPath . ':' . $table . '.navtitle',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -73,14 +80,14 @@ return [
         ],
         'important' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_reference.important',
+            'label' => $llPath . ':' . $table . '.important',
             'config' => [
                 'type' => 'check'
             ]
         ],
         'url' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_reference.url',
+            'label' => $llPath . ':' . $table . '.url',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -89,7 +96,7 @@ return [
         ],
         'images' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_reference.images',
+            'label' => $llPath . ':' . $table . '.images',
             'config' => [
                 'type' => 'file',
                 'maxitems' => 99,
@@ -99,7 +106,7 @@ return [
         ],
         'files' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_reference.files',
+            'label' => $llPath . ':' . $table . '.files',
             'config' => [
                 'type' => 'file',
                 'maxitems' => 99,
@@ -109,7 +116,7 @@ return [
         ],
         'realization_date' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_reference.realization_date',
+            'label' => $llPath . ':' . $table . '.realization_date',
             'config' => [
                 'type' => 'datetime',
                 'format' => 'date',
@@ -119,7 +126,7 @@ return [
         ],
         'category' => [
             'exclude' => 0,
-            'label' => $llPath . ':tx_msreference_domain_model_reference.category',
+            'label' => $llPath . ':' . $table . '.category',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectTree',
@@ -142,7 +149,7 @@ return [
         ],
         'param_values' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_reference.param_values',
+            'label' => $llPath . ':' . $table . '.param_values',
             'config' => [
                 'type' => 'inline',
                 'foreign_table' => 'tx_msreference_domain_model_paramvalue',
@@ -161,7 +168,7 @@ return [
         ],
         'gps_latitude' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_reference.gps_latitude',
+            'label' => $llPath . ':' . $table . '.gps_latitude',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -170,27 +177,40 @@ return [
         ],
         'gps_longitude' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_reference.gps_longitude',
+            'label' => $llPath . ':' . $table . '.gps_longitude',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
                 'eval' => 'trim,' . Clickstorm\GoMapsExt\Evaluation\Double6Evaluator::class
             ]
         ],
+        'address' => [
+            'exclude' => 1,
+            'label' => $llPath . ':' . $table . '.address',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'trim'
+            ]
+        ],
         'map' => [
-            'label' => $llPath . ':tx_msreference_domain_model_reference.gps_map',
+            'label' => $llPath . ':' . $table . '.gps_map',
             'config' => [
                 'type' => 'user',
                 'renderType' => 'GomapsextMapElement',
                 'parameters' => [
                     'longitude' => 'gps_latitude',
                     'latitude' => 'gps_longitude',
+                    'address' => 'address',
+                    'street' => 'street',
+                    'zip' => 'zip',
+                    'city' => 'city',
                 ],
             ],
         ],
         'perex' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_reference.perex',
+            'label' => $llPath . ':' . $table . '.perex',
             'config' => [
                 'type' => 'text',
                 'cols' => 40,
@@ -200,7 +220,7 @@ return [
         ],
         'text' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_reference.text',
+            'label' => $llPath . ':' . $table . '.text',
             'config' => [
                 'type' => 'text',
                 'cols' => 40,
@@ -223,7 +243,7 @@ return [
         ],
         'meta_keywords' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_reference.meta_keywords',
+            'label' => $llPath . ':' . $table . '.meta_keywords',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -232,7 +252,7 @@ return [
         ],
         'meta_description' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_reference.meta_description',
+            'label' => $llPath . ':' . $table . '.meta_description',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -241,14 +261,14 @@ return [
         ],
         'current_project' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_reference.current_project',
+            'label' => $llPath . ':' . $table . '.current_project',
             'config' => [
                 'type' => 'check'
             ]
         ],
         'similar_references' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_reference.similar_references',
+            'label' => $llPath . ':' . $table . '.similar_references',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectMultipleSideBySide',
@@ -263,7 +283,7 @@ return [
         ],
         'clients' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_reference.clients',
+            'label' => $llPath . ':' . $table . '.clients',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectMultipleSideBySide',
@@ -274,6 +294,33 @@ return [
                 'autoSizeMax' => 30,
                 'maxitems' => 99,
                 'multiple' => 0
+            ]
+        ],
+        'city' => [
+            'exclude' => 1,
+            'label' => $llPath . ':' . $table . '.city',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'trim'
+            ]
+        ],
+        'street' => [
+            'exclude' => 1,
+            'label' => $llPath . ':' . $table . '.street',
+            'config' => [
+                'type' => 'input',
+                'size' => 30,
+                'eval' => 'trim'
+            ]
+        ],
+        'zip' => [
+            'exclude' => 1,
+            'label' => $llPath . ':' . $table . '.zip',
+            'config' => [
+                'type' => 'input',
+                'size' => 5,
+                'eval' => 'trim'
             ]
         ],
         'sorting' => [

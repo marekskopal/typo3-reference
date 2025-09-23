@@ -45,6 +45,12 @@ class Reference extends AbstractEntity implements Stringable
 
     protected string $text = '';
 
+    protected string $street = '';
+
+    protected string $city = '';
+
+    protected string $zip = '';
+
     /** @var ObjectStorage<Category> */
     #[Lazy()]
     protected ObjectStorage $categories;
@@ -54,8 +60,6 @@ class Reference extends AbstractEntity implements Stringable
     protected string $metaDescription = '';
 
     protected bool $currentProject = false;
-
-    protected int $gridSize = 1;
 
     /** @var ObjectStorage<Reference> */
     #[Lazy()]
@@ -239,6 +243,36 @@ class Reference extends AbstractEntity implements Stringable
         $this->text = $text;
     }
 
+    public function getStreet(): string
+    {
+        return $this->street;
+    }
+
+    public function setStreet(string $street): void
+    {
+        $this->street = $street;
+    }
+
+    public function getCity(): string
+    {
+        return $this->city;
+    }
+
+    public function setCity(string $city): void
+    {
+        $this->city = $city;
+    }
+
+    public function getZip(): string
+    {
+        return $this->zip;
+    }
+
+    public function setZip(string $zip): void
+    {
+        $this->zip = $zip;
+    }
+
     public function addCategory(Category $category): void
     {
         $this->categories->attach($category);
@@ -294,16 +328,6 @@ class Reference extends AbstractEntity implements Stringable
     public function setCurrentProject(bool $currentProject): void
     {
         $this->currentProject = $currentProject;
-    }
-
-    public function getGridSize(): int
-    {
-        return $this->gridSize;
-    }
-
-    public function setGridSize(int $gridSize): void
-    {
-        $this->gridSize = $gridSize;
     }
 
     public function addSimilarReference(Reference $similarReference): void

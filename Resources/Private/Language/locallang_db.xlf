@@ -75,6 +75,18 @@
 			<trans-unit id="tx_msreference_domain_model_reference.similar_references">
 				<source>Similar references</source>
 			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.street">
+				<source>Street</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.city">
+				<source>City</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.zip">
+				<source>ZIP</source>
+			</trans-unit>
 			<trans-unit id="tx_msreference_domain_model_reference.tab_params">
 				<source>Parameters</source>
 			</trans-unit>
@@ -83,6 +95,9 @@
 			</trans-unit>
 			<trans-unit id="tx_msreference_domain_model_reference.tab_texts">
 				<source>Texts</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_reference.tab_contact">
+				<source>Contact</source>
 			</trans-unit>
 			<trans-unit id="tx_msreference_domain_model_reference.tab_relations">
 				<source>Relations</source>
@@ -169,6 +184,36 @@
 			</trans-unit>
 			<trans-unit id="tx_msreference_domain_model_client.references">
 				<source>References</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.gps_latitude">
+				<source>GPS Latitude</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.gps_longitude">
+				<source>GPS Longitude</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.gps_map">
+				<source>Map</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.address">
+				<source>Address</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.street">
+				<source>Street</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.city">
+				<source>City</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.zip">
+				<source>ZIP</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.tab_media">
+				<source>Media</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.tab_contact">
+				<source>Contact</source>
+			</trans-unit>
+			<trans-unit id="tx_msreference_domain_model_client.tab_relations">
+				<source>Relations</source>
 			</trans-unit>
 
 			<trans-unit id="flexform.sheet_general">

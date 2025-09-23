@@ -5,10 +5,11 @@ declare(strict_types=1);
 defined('TYPO3') or die();
 
 $llPath = 'LLL:EXT:ms_reference/Resources/Private/Language/locallang_db.xlf';
+$table = 'tx_msreference_domain_model_param';
 
 return [
     'ctrl' => [
-        'title' => $llPath . ':tx_msreference_domain_model_param',
+        'title' => $llPath . ':' . $table,
         'label' => 'title',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -22,7 +23,7 @@ return [
             'disabled' => 'hidden'
         ],
         'searchFields' => 'title',
-        'iconfile' => 'EXT:ms_reference/Resources/Public/Icons/tx_msreference_domain_model_param.png'
+        'iconfile' => 'EXT:ms_reference/Resources/Public/Icons/' . $table . '.png'
     ],
     'types' => [
         '1' => [
@@ -44,7 +45,7 @@ return [
         ],
         'title' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_param.title',
+            'label' => $llPath . ':' . $table . '.title',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -54,7 +55,7 @@ return [
         ],
         'class' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_param.class',
+            'label' => $llPath . ':' . $table . '.class',
             'config' => [
                 'type' => 'input',
                 'size' => 30,

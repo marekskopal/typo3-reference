@@ -5,10 +5,11 @@ declare(strict_types=1);
 defined('TYPO3') or die();
 
 $llPath = 'LLL:EXT:ms_reference/Resources/Private/Language/locallang_db.xlf';
+$table = 'tx_msreference_domain_model_category';
 
 return [
     'ctrl' => [
-        'title' => $llPath . ':tx_msreference_domain_model_category',
+        'title' => $llPath . ':' . $table,
         'label' => 'title',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -22,7 +23,7 @@ return [
             'disabled' => 'hidden'
         ],
         'searchFields' => 'title,subtitle,navtitle,perex,text',
-        'iconfile' => 'EXT:ms_reference/Resources/Public/Icons/tx_msreference_domain_model_category.png'
+        'iconfile' => 'EXT:ms_reference/Resources/Public/Icons/' . $table . '.png'
     ],
     'types' => [
         '1' => [
@@ -44,7 +45,7 @@ return [
         ],
         'parent' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_category.parent',
+            'label' => $llPath . ':' . $table . '.parent',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
@@ -62,7 +63,7 @@ return [
         ],
         'title' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_category.title',
+            'label' => $llPath . ':' . $table . '.title',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -72,7 +73,7 @@ return [
         ],
         'subtitle' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_category.subtitle',
+            'label' => $llPath . ':' . $table . '.subtitle',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -81,7 +82,7 @@ return [
         ],
         'navtitle' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_category.navtitle',
+            'label' => $llPath . ':' . $table . '.navtitle',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -90,7 +91,7 @@ return [
         ],
         'class' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_category.class',
+            'label' => $llPath . ':' . $table . '.class',
             'config' => [
                 'type' => 'input',
                 'size' => 30,
@@ -99,7 +100,7 @@ return [
         ],
         'perex' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_category.perex',
+            'label' => $llPath . ':' . $table . '.perex',
             'config' => [
                 'type' => 'text',
                 'cols' => 40,
@@ -109,7 +110,7 @@ return [
         ],
         'text' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_category.text',
+            'label' => $llPath . ':' . $table . '.text',
             'config' => [
                 'type' => 'text',
                 'cols' => 40,
@@ -131,7 +132,7 @@ return [
         ],
         'images' => [
             'exclude' => 1,
-            'label' => $llPath . ':tx_msreference_domain_model_category.images',
+            'label' => $llPath . ':' . $table . '.images',
             'config' => [
                 'type' => 'file',
                 'maxitems' => 99,
