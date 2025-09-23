@@ -333,6 +333,30 @@
 				<source>Sort by</source>
 				<target>Řadit dle</target>
 			</trans-unit>
+			<trans-unit id="flexform.list_sort_field.sorting">
+				<source>Sorting</source>
+				<target>Řazení</target>
+			</trans-unit>
+			<trans-unit id="flexform.list_sort_field.uid">
+				<source>Id</source>
+				<target>Id</target>
+			</trans-unit>
+			<trans-unit id="flexform.list_sort_field.title">
+				<source>Title</source>
+				<target>Názvu</target>
+			</trans-unit>
+			<trans-unit id="flexform.list_sort_field.crdate">
+				<source>Creation date</source>
+				<target>Data vytvoření</target>
+			</trans-unit>
+			<trans-unit id="flexform.list_sort_field.realization_date">
+				<source>Realization date</source>
+				<target>Data realizace</target>
+			</trans-unit>
+			<trans-unit id="flexform.list_sort_field.custom">
+				<source>Custom</source>
+				<target>Ruční</target>
+			</trans-unit>
 			<trans-unit id="flexform.list_sort_dir">
 				<source>Sort direction</source>
 				<target>Směr řazení</target>

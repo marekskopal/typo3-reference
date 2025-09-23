@@ -81,27 +81,27 @@
                             <renderType>selectSingle</renderType>
                             <items>
                                 <numIndex index="0" type="array">
-                                    <label>Pořadí</label>
+                                    <label>LLL:EXT:ms_reference/Resources/Private/Language/locallang_db.xlf:flexform.list_sort_field.sorting</label>
                                     <value>sorting</value>
                                 </numIndex>
                                 <numIndex index="1" type="array">
-                                    <label>Id</label>
+                                    <label>LLL:EXT:ms_reference/Resources/Private/Language/locallang_db.xlf:flexform.list_sort_field.uid</label>
                                     <value>uid</value>
                                 </numIndex>
                                 <numIndex index="2" type="array">
-                                    <label>Názvu</label>
+                                    <label>LLL:EXT:ms_reference/Resources/Private/Language/locallang_db.xlf:flexform.list_sort_field.title</label>
                                     <value>title</value>
                                 </numIndex>
                                 <numIndex index="3" type="array">
-                                    <label>Data vytvoření</label>
+                                    <label>LLL:EXT:ms_reference/Resources/Private/Language/locallang_db.xlf:flexform.list_sort_field.crdate</label>
                                     <value>crdate</value>
                                 </numIndex>
                                 <numIndex index="4" type="array">
-                                    <label>Data realizace</label>
+                                    <label>LLL:EXT:ms_reference/Resources/Private/Language/locallang_db.xlf:flexform.list_sort_field.realization_date</label>
                                     <value>realization_date</value>
                                 </numIndex>
                                 <numIndex index="5" type="array">
-                                    <label>Ruční</label>
+                                    <label>LLL:EXT:ms_reference/Resources/Private/Language/locallang_db.xlf:flexform.list_sort_field.custom</label>
                                     <value>custom</value>
                                 </numIndex>
                             </items>

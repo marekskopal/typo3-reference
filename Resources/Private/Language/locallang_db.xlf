@@ -237,6 +237,24 @@
 			<trans-unit id="flexform.list_sort_field">
 				<source>Sort by</source>
 			</trans-unit>
+			<trans-unit id="flexform.list_sort_field.sorting">
+				<source>Sorting</source>
+			</trans-unit>
+			<trans-unit id="flexform.list_sort_field.uid">
+				<source>Id</source>
+			</trans-unit>
+			<trans-unit id="flexform.list_sort_field.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="flexform.list_sort_field.crdate">
+				<source>Creation date</source>
+			</trans-unit>
+			<trans-unit id="flexform.list_sort_field.realization_date">
+				<source>Realization date</source>
+			</trans-unit>
+			<trans-unit id="flexform.list_sort_field.custom">
+				<source>Custom</source>
+			</trans-unit>
 			<trans-unit id="flexform.list_sort_dir">
 				<source>Sort direction</source>
 			</trans-unit>
