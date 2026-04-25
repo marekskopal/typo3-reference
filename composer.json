@@ -2,6 +2,14 @@
     "name": "marekskopal/typo3-reference",
     "type": "typo3-cms-extension",
     "description": "This TYPO3 extension provides a reference portfolio feature, allowing you to showcase projects or works in a structured manner.",
+    "homepage": "https://marekskopal.com",
+    "authors": [
+        {
+            "name": "Marek Skopal",
+            "role": "Developer",
+            "homepage": "https://marekskopal.com"
+        }
+    ],
     "license": "GPL-2.0-or-later",
     "require": {
         "php": ">=8.2",
