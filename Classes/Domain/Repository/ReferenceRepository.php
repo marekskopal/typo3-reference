@@ -13,6 +13,7 @@ use TYPO3\CMS\Extbase\Persistence\Repository;
 /** @extends Repository<Reference> */
 class ReferenceRepository extends Repository
 {
+    /** @var array<string, string> */
     protected $defaultOrderings = [
         'realization_date' => QueryInterface::ORDER_DESCENDING,
     ];

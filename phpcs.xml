@@ -5,4 +5,7 @@
     <file>Classes/</file>
     <file>Configuration/TCA/</file>
     <rule ref="ruleset.xml"/>
+    <rule ref="Squiz.Operators.ValidLogicalOperators.NotAllowed">
+        <exclude-pattern>Configuration/TCA/</exclude-pattern>
+    </rule>
 </ruleset>
