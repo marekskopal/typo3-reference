@@ -4,6 +4,8 @@ All notable changes to this project are documented here. The format is based on 
 
 ## [Unreleased]
 
+## [1.2.0] — 2026-05-29
+
 ### Added
 - TYPO3 v14.3 support alongside v13.4 (`composer.json` and `ext_emconf.php` widened to `^13.4 || ^14.3`; `clickstorm/go-maps-ext` widened to `^7.1 || ^8.0`).
 - CI matrix dimension running PHPStan against both TYPO3 13.4 and 14.3.
@@ -43,6 +45,7 @@ Initial release.
 - Czech and English backend translations.
 - Tooling: PHPStan at `level: max` with bleedingEdge + shipmonk rules; PHPCS using the shared `ruleset.xml` (PSR-12 + Slevomat).
 
-[Unreleased]: https://github.com/marekskopal/typo3-reference/compare/v1.1.0...HEAD
+[Unreleased]: https://github.com/marekskopal/typo3-reference/compare/v1.2.0...HEAD
+[1.2.0]: https://github.com/marekskopal/typo3-reference/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/marekskopal/typo3-reference/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/marekskopal/typo3-reference/releases/tag/v1.0.0
