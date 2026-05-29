@@ -183,7 +183,7 @@ return [
             'config' => [
                 'type' => 'input',
                 'size' => 30,
-                'eval' => 'trim,' . Clickstorm\GoMapsExt\Evaluation\Double6Evaluator::class,
+                'eval' => 'trim,' . Double6Evaluator::class,
             ],
         ],
         'address' => [
