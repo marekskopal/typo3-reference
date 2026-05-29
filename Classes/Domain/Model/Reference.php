@@ -6,7 +6,6 @@ namespace MarekSkopal\MsReference\Domain\Model;
 
 use DateTime;
 use Stringable;
-use TYPO3\CMS\Extbase\Annotation\ORM\Lazy;
 use TYPO3\CMS\Extbase\Domain\Model\FileReference;
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
@@ -24,15 +23,12 @@ class Reference extends AbstractEntity implements Stringable
     protected string $url = '';
 
     /** @var ObjectStorage<ParamValue> */
-    #[Lazy()]
     protected ObjectStorage $paramValues;
 
     /** @var ObjectStorage<FileReference> */
-    #[Lazy()]
     protected ObjectStorage $images;
 
     /** @var ObjectStorage<FileReference> */
-    #[Lazy()]
     protected ObjectStorage $files;
 
     protected ?DateTime $realizationDate = null;
@@ -52,7 +48,6 @@ class Reference extends AbstractEntity implements Stringable
     protected string $zip = '';
 
     /** @var ObjectStorage<Category> */
-    #[Lazy()]
     protected ObjectStorage $categories;
 
     protected string $metaKeywords = '';
@@ -62,11 +57,9 @@ class Reference extends AbstractEntity implements Stringable
     protected bool $currentProject = false;
 
     /** @var ObjectStorage<Reference> */
-    #[Lazy()]
     protected ObjectStorage $similarReferences;
 
     /** @var ObjectStorage<Client> */
-    #[Lazy()]
     protected ObjectStorage $clients;
 
     protected int $sorting = 0;

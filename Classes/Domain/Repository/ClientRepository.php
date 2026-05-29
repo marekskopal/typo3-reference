@@ -13,15 +13,11 @@ use TYPO3\CMS\Extbase\Persistence\Repository;
 /** @extends Repository<Client> */
 class ClientRepository extends Repository
 {
-    /** @var array<string, string> */
-    protected $defaultOrderings = [
-        'sorting' => QueryInterface::ORDER_ASCENDING,
-    ];
-
     /** @return QueryResultInterface<int, Client> */
     public function findClients(?int $limit = 0, ?int $offset = 0): QueryResultInterface
     {
         $query = $this->createQuery();
+        $query->setOrderings(['sorting' => QueryInterface::ORDER_ASCENDING]);
 
         if (is_int($limit) && $limit > 0) {
             $query->setLimit($limit);

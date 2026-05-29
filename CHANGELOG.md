@@ -5,12 +5,20 @@ All notable changes to this project are documented here. The format is based on 
 ## [Unreleased]
 
 ### Added
+- TYPO3 v14.3 support alongside v13.4 (`composer.json` and `ext_emconf.php` widened to `^13.4 || ^14.3`; `clickstorm/go-maps-ext` widened to `^7.1 || ^8.0`).
+- CI matrix dimension running PHPStan against both TYPO3 13.4 and 14.3.
 - `CLAUDE.md` with architecture and tooling guidance for Claude Code.
 - `.gitattributes` and GitHub Actions CI workflow (`.github/workflows/ci.yml`) running PHPStan on PHP 8.2 and 8.4 and PHPCS on PHP 8.2.
+
+### Changed
+- `ActionController::initializeView()` now accepts both Fluid `TemplateView` (v13.4) and Core `FluidViewAdapter` (v14.3) views via runtime `assert`.
+- `ClientRepository` / `ReferenceRepository`: dropped the `$defaultOrderings` property override (its parent PHPDoc tightened in v14) — orderings are now set explicitly per query method.
+- Removed `#[Lazy]` attributes from domain models: the `TYPO3\CMS\Extbase\Annotation\ORM\Lazy` namespace was removed in v14. Relations are now eager-loaded by default.
 
 ### Fixed
 - PHPCS violations surfaced after enabling CI.
 - Homepage link in `composer.json`.
+- FlexFormReference dropped obsolete `<internal_type>db</internal_type>` (removed from TCA in TYPO3 12).
 
 ## [1.1.0] — 2025-09-23
 

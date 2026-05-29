@@ -4,15 +4,18 @@ declare(strict_types=1);
 
 namespace MarekSkopal\MsReference\Controller;
 
+use TYPO3\CMS\Fluid\View\FluidViewAdapter;
 use TYPO3Fluid\Fluid\View\TemplatePaths;
 use TYPO3Fluid\Fluid\View\TemplateView;
 use TYPO3Fluid\Fluid\View\ViewInterface;
 
-/** @property TemplateView $view */
 abstract class ActionController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
     protected function initializeView(ViewInterface $view): void
     {
+        /** @phpstan-ignore-next-line instanceof.internalClass */
+        assert($view instanceof TemplateView || $view instanceof FluidViewAdapter);
+
         /**
          * @var array{
          *     templateLayout?: string,
@@ -36,8 +39,11 @@ abstract class ActionController extends \TYPO3\CMS\Extbase\Mvc\Controller\Action
             return;
         }
 
-        /** @var TemplatePaths $templatePaths */
-        $templatePaths = $this->view->getRenderingContext()->getTemplatePaths();
+        /**
+         * @var TemplatePaths $templatePaths
+         * @phpstan-ignore-next-line method.internalClass
+         */
+        $templatePaths = $view->getRenderingContext()->getTemplatePaths();
 
         if (isset($templateLayout['templateRootPath'])) {
             $templatePaths->setTemplateRootPaths(

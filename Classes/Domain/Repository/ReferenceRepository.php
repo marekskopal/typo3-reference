@@ -13,11 +13,6 @@ use TYPO3\CMS\Extbase\Persistence\Repository;
 /** @extends Repository<Reference> */
 class ReferenceRepository extends Repository
 {
-    /** @var array<string, string> */
-    protected $defaultOrderings = [
-        'realization_date' => QueryInterface::ORDER_DESCENDING,
-    ];
-
     /**
      * @param list<int> $categoryUids
      * @return QueryResultInterface<int, Reference>
@@ -98,6 +93,7 @@ class ReferenceRepository extends Repository
     {
         $query = $this->createQuery();
         $query->lessThan('sorting', $referenceSorting);
+        $query->setOrderings(['realization_date' => QueryInterface::ORDER_DESCENDING]);
         $query->setLimit(1);
 
         return $query->execute()->getFirst();
@@ -107,6 +103,7 @@ class ReferenceRepository extends Repository
     {
         $query = $this->createQuery();
         $query->greaterThan('sorting', $referenceSorting);
+        $query->setOrderings(['realization_date' => QueryInterface::ORDER_DESCENDING]);
         $query->setLimit(1);
 
         return $query->execute()->getFirst();

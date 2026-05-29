@@ -10,7 +10,6 @@
                         <label>LLL:EXT:ms_reference/Resources/Private/Language/locallang_db.xlf:flexform.list_categories</label>
                         <config>
                             <type>group</type>
-                            <internal_type>db</internal_type>
                             <size>5</size>
                             <maxitems>10</maxitems>
                             <allowed>tx_msreference_domain_model_category</allowed>

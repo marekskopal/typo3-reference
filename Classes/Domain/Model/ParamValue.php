@@ -5,13 +5,10 @@ declare(strict_types=1);
 namespace MarekSkopal\MsReference\Domain\Model;
 
 use Stringable;
-use TYPO3\CMS\Extbase\Annotation\ORM\Lazy;
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 
 class ParamValue extends AbstractEntity implements Stringable
 {
-    #[Lazy()]
-
     //@phpstan-ignore-next-line property.uninitialized
     protected Param $param;
 

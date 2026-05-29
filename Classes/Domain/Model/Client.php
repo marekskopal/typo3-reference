@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace MarekSkopal\MsReference\Domain\Model;
 
 use Stringable;
-use TYPO3\CMS\Extbase\Annotation\ORM\Lazy;
 use TYPO3\CMS\Extbase\Domain\Model\FileReference;
 use TYPO3\CMS\Extbase\DomainObject\AbstractEntity;
 use TYPO3\CMS\Extbase\Persistence\ObjectStorage;
@@ -15,7 +14,6 @@ class Client extends AbstractEntity implements Stringable
     protected string $title = '';
 
     /** @var ObjectStorage<FileReference> */
-    #[Lazy()]
     protected ObjectStorage $images;
 
     protected string $perex = '';
@@ -37,7 +35,6 @@ class Client extends AbstractEntity implements Stringable
     protected string $zip = '';
 
     /** @var ObjectStorage<Reference> */
-    #[Lazy()]
     protected ObjectStorage $references;
 
     public function __construct()
