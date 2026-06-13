@@ -4,6 +4,11 @@ All notable changes to this project are documented here. The format is based on 
 
 ## [Unreleased]
 
+## [1.2.1] — 2026-06-13
+
+### Fixed
+- `Resources/Public` (backend icons and JavaScript) was excluded from version control by the bare `public` entry in `.gitignore`, which matched at any depth. Anchored the rule to `/public` and added the previously-ignored files.
+
 ## [1.2.0] — 2026-05-29
 
 ### Added
@@ -45,7 +50,8 @@ Initial release.
 - Czech and English backend translations.
 - Tooling: PHPStan at `level: max` with bleedingEdge + shipmonk rules; PHPCS using the shared `ruleset.xml` (PSR-12 + Slevomat).
 
-[Unreleased]: https://github.com/marekskopal/typo3-reference/compare/v1.2.0...HEAD
+[Unreleased]: https://github.com/marekskopal/typo3-reference/compare/v1.2.1...HEAD
+[1.2.1]: https://github.com/marekskopal/typo3-reference/compare/v1.2.0...v1.2.1
 [1.2.0]: https://github.com/marekskopal/typo3-reference/compare/v1.1.0...v1.2.0
 [1.1.0]: https://github.com/marekskopal/typo3-reference/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/marekskopal/typo3-reference/releases/tag/v1.0.0
